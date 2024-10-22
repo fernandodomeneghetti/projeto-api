@@ -22,7 +22,7 @@ class UserService {
             throw new Error('Senha inválida');
         }
 
-        const token = jwt.sign({id: user.id}, SECRET_KEY, {expiresIn: '1h'});
+        const token = jwt.sign({id: user.id}, SECRET_KEY, {expiresIn: '24h'});
         return token;
     }
 

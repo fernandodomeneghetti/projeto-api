@@ -3,8 +3,9 @@
   "info": {
     "title": "User API",
     "description": "API para registro, login e listagem de usuários",
-    "version": "1.0.0",
-    "components": {
+    "version": "1.0.0"
+  },
+  "components": {
       "securitySchemes": {
         "BearerAuth": {
           "type": "http",
@@ -12,7 +13,6 @@
           "bearerFormat": "JWT"
         }
       }
-    }
   },
   "paths": {
     "/api/user/register": {
@@ -113,9 +113,11 @@
       "get": {
         "tags": ["Users"],
         "summary": "Obter a lista de usuários",
-        "security": [{
-          "BearerAuth": []
-        }],
+        "security": [  
+          {
+            "BearerAuth": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Lista de usuários",
