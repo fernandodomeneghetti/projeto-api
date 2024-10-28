@@ -1,4 +1,11 @@
 # Containers
+
+### Máquinas Virtuais
+Máquinas virtuais foram originalmente projetadas para permitir que vários sistemas operacionais sejam executados em uma única máquina física. O objetivo é permitir que os usuários criem um ambiente virtual isolado do hardware subjacente. As VMs abstraem os detalhes do hardware para facilitar a execução de aplicações em diferentes arquiteturas de hardware e usar os recursos de hardware com mais eficiência.
+
+### 
+O Docker, por outro lado, foi projetado para fornecer uma maneira leve e portátil de empacotar e executar aplicações em um ambiente isolado e reproduzível. O Docker abstrai os detalhes do sistema operacional para enfrentar o desafio de implantar aplicações em diferentes ambientes, como desenvolvimento, teste e produção. Pode ser muito desafiador gerenciar as atualizações do ambiente de software e manter a consistência do ambiente em todos os lugares. Isso é especialmente válido para organizações que executam centenas de aplicações ou decompõem aplicações em centenas de microsserviços. O Docker resolve esse problema por meio da estruturação em contêiner. 
+
 [Link Docker vs VM](https://aws.amazon.com/pt/compare/the-difference-between-docker-vm/)
 
 ## Docker Images 
