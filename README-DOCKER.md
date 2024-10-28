@@ -3,8 +3,25 @@
 ### Máquinas Virtuais
 Máquinas virtuais foram originalmente projetadas para permitir que vários sistemas operacionais sejam executados em uma única máquina física. O objetivo é permitir que os usuários criem um ambiente virtual isolado do hardware subjacente. As VMs abstraem os detalhes do hardware para facilitar a execução de aplicações em diferentes arquiteturas de hardware e usar os recursos de hardware com mais eficiência.
 
-### 
+### Docker
 O Docker, por outro lado, foi projetado para fornecer uma maneira leve e portátil de empacotar e executar aplicações em um ambiente isolado e reproduzível. O Docker abstrai os detalhes do sistema operacional para enfrentar o desafio de implantar aplicações em diferentes ambientes, como desenvolvimento, teste e produção. Pode ser muito desafiador gerenciar as atualizações do ambiente de software e manter a consistência do ambiente em todos os lugares. Isso é especialmente válido para organizações que executam centenas de aplicações ou decompõem aplicações em centenas de microsserviços. O Docker resolve esse problema por meio da estruturação em contêiner. 
+
+### Quando usar uma máquina virtual
+É melhor usar uma máquina virtual se você está executando aplicações com estes requisitos: 
+
+- Dependências específicas do sistema operacional
+- Requisitos de recursos de hardware substanciais
+- A necessidade de definir vários controles nos sistemas operacionais
+- Aplicações legadas que não são mais executadas em sistemas operacionais modernos
+- Diferentes requisitos de sistema operacional com uma única infraestrutura física subjacente disponível
+
+### Quando usar o docker
+É melhor usar o Docker ao executar aplicações com estes requisitos: 
+
+- Requisitos de recursos leves ou uma arquitetura de microsserviços
+- Um ambiente de infraestrutura física distribuída, incluindo servidores baseados em nuvem
+- Ciclos de implantação rápidos (já que Dockerfiles são mais fáceis de gerenciar do que configurações de VM)
+- Um requisito de escalabilidade rápida
 
 [Link Docker vs VM](https://aws.amazon.com/pt/compare/the-difference-between-docker-vm/)
 
